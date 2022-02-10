@@ -59,7 +59,7 @@ nav {
 }
 
 body {
-    background-image: url("/img/background.jpg");
+    background-image: url("../img/background.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -100,7 +100,7 @@ body {
     border-width: 5px 0;
     font-weight: bold;
     font-size: 2rem;
-    background-image: url("/img/bkg-content-black_209fe757.png");
+    background-image: url("../img/bkg-content-black_209fe757.png");
     overflow: hidden;
     background-repeat: no-repeat;
     text-align: center;
@@ -131,7 +131,7 @@ iframe {
 }
 
 .awards {
-    background: url(/img/d8ty7hq-772776fd-4f6c-4870-8f97-2a8c836884d9.jpg) no-repeat center center fixed;
+    background: url(../img/d8ty7hq-772776fd-4f6c-4870-8f97-2a8c836884d9.jpg) no-repeat center center fixed;
     background-size: cover;
     height: 100%;
     overflow: hidden;
@@ -146,10 +146,13 @@ iframe {
 }
 
 .award-header {
-    font-size: 30px;
+    font-size: 50px;
     font-weight: bold;
     text-align: center;
     margin: 70px;
+    background-image: url(../img/bkg-content-black_209fe757.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 
 
 }
@@ -170,7 +173,7 @@ iframe {
     color: rgb(236, 228, 228);
     text-align: center;
     line-height: 1.5;
-    background: url(/img/bkg-content-black_209fe757.png) no-repeat;
+    background: url(../img/bkg-content-black_209fe757.png) no-repeat;
     background-size: 100% 100%;
 
 
@@ -228,7 +231,7 @@ iframe {
 }
 
 .download-header {
-    background-image: url(/img/bkg-content-black_209fe757.png);
+    background-image: url(../img/bkg-content-black_209fe757.png);
     background-size: 100% 100%;
     margin: 70px;
 
