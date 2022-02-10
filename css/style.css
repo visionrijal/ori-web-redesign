@@ -1,0 +1,254 @@
+@font-face {
+    font-family: 'gore';
+    src: local("Gore Rough.woff") format('woff');
+    font-weight: bold;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'poppins', sans-serif;
+
+
+}
+
+.logo a {
+    font-family: 'gore';
+    font-size: 80px;
+    color: rgb(236, 228, 228);
+    letter-spacing: 5px;
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: transparent;
+    overflow: hidden;
+    position: fixed;
+    /* Set the navbar to fixed position */
+    top: 0;
+    /* Position the navbar at the top of the page */
+    width: 100%;
+    /* Full width */
+
+
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+
+}
+
+.nav-links a {
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: rgb(236, 228, 228);
+
+}
+
+.nav-links a:hover {
+    color: orange;
+}
+
+body {
+    background-image: url("/img/background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin-top: 70px;
+    color: rgb(236, 228, 228);
+    overflow-x: hidden;
+
+}
+
+.news {
+    padding: 100px;
+    margin-top: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+
+
+}
+
+
+
+.footer {
+    height: 8vh;
+
+}
+
+.news-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    color: rgb(236, 228, 228);
+    border: solid rgb(236, 228, 228);
+    border-width: 5px 0;
+    font-weight: bold;
+    font-size: 2rem;
+    background-image: url("/img/bkg-content-black_209fe757.png");
+    overflow: hidden;
+    background-repeat: no-repeat;
+    text-align: center;
+    background-size: 100% 100%;
+
+
+
+
+
+
+
+
+
+}
+
+
+a {
+    color: rgb(236, 228, 228);
+
+}
+
+a:hover {
+    color: orange;
+}
+
+iframe {
+    margin: 50px;
+}
+
+.awards {
+    background: url(/img/d8ty7hq-772776fd-4f6c-4870-8f97-2a8c836884d9.jpg) no-repeat center center fixed;
+    background-size: cover;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+
+
+
+}
+
+.award-header {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin: 70px;
+
+
+}
+
+.awards-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 70px;
+
+
+}
+
+.award-item {
+
+
+    font-size: 30px;
+    color: rgb(236, 228, 228);
+    text-align: center;
+    line-height: 1.5;
+    background: url(/img/bkg-content-black_209fe757.png) no-repeat;
+    background-size: 100% 100%;
+
+
+
+}
+
+.award-title {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 10px;
+    text-decoration: underline;
+
+
+
+
+
+
+}
+
+.download {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.download-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
+
+.download-img1 {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+.download-img2{
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+.download-img1:hover {
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+}
+.download-img2:hover {
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+}
+
+.download-header {
+    background-image: url(/img/bkg-content-black_209fe757.png);
+    background-size: 100% 100%;
+    margin: 70px;
+
+}
+
+.download-header p {
+    font-size: 100px;
+}
+.CONTACT{
+    margin: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.footer-note{
+   font-weight: bold;
+   color: rgb(236, 228, 228);
+   padding: 30px;
+   margin: 30px;
+
+}
