@@ -117,6 +117,7 @@ a:hover {
     background: url(../img/d8ty7hq-772776fd-4f6c-4870-8f97-2a8c836884d9.jpg) no-repeat center center fixed;
     background-size: cover;
     height: 100%;
+    width: 100%;
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -265,7 +266,7 @@ iframe {
 
 /* for tablet  */
 
-@media (max-width:955px){
+@media screen and (max-width:955px){
     
     .nav-links li{
         margin:2rem;
@@ -291,7 +292,7 @@ iframe {
 
 
 /* for phone  */
-@media(max-width:840px){
+@media screen and (max-width:840px){
     
     .check-btn{
         display: block;
@@ -307,7 +308,7 @@ iframe {
         flex-direction:column;
         width:50%;
         height:80vh;
-        background-image: url(/img/bkg-content-black_209fe757.png);
+        background-image: url(../img/bkg-content-black_209fe757.png);
         background-size: 100% 100%;
         text-align: center;
         transition: all 0.5s;
@@ -332,6 +333,9 @@ iframe {
     }
     .download-header p{
         font-size: 3rem;
+    }
+    .footer-note p{
+        font-size: 0.9rem;
     }
     
 
