@@ -1,9 +1,11 @@
 
+/* adding custom font family  */
 @font-face {
     font-family: gore;
     src: url(../fonts/gore.woff);
   }
 
+  /* removing default css on all elements */
 * {
     margin: 0;
     padding: 0;
@@ -15,13 +17,14 @@
 
 
 }
-
-
-.logo a {
-    font-family: 'gore';
-    font-size: 80px;
+body {
+    background-image: url("../img/background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin-top: 70px;
     color: rgb(236, 228, 228);
-    letter-spacing: 5px;
+    overflow-x: hidden;
 
 }
 
@@ -31,16 +34,27 @@ nav {
     align-items: center;
     min-height: 8vh;
     background-color: transparent;
-    overflow: hidden;
+    
     position: fixed;
     /* Set the navbar to fixed position */
     top: 0;
     /* Position the navbar at the top of the page */
     width: 100%;
     /* Full width */
-
+    z-index: 100;
+    /* nav bar appears on top of everything */
 
 }
+
+.logo a {
+    font-family: 'gore';
+    font-size: 80px;
+    color: rgb(236, 228, 228);
+    letter-spacing: 5px;
+
+}
+
+
 
 .nav-links {
     display: flex;
@@ -57,18 +71,16 @@ nav {
 }
 
 .nav-links a:hover {
-    color: orange;
+    color: orange;  
 }
 
-body {
-    background-image: url("../img/background.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    margin-top: 70px;
+a {
     color: rgb(236, 228, 228);
-    overflow-x: hidden;
 
+}
+
+a:hover {
+    color: orange;
 }
 
 .news {
@@ -83,14 +95,6 @@ body {
 
 
 }
-
-
-
-.footer {
-    height: 8vh;
-
-}
-
 .news-content {
     display: flex;
     flex-direction: column;
@@ -101,35 +105,12 @@ body {
     border: solid rgb(236, 228, 228);
     border-width: 5px 0;
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 2.5rem;
     background-image: url("../img/bkg-content-black_209fe757.png");
     overflow: hidden;
     background-repeat: no-repeat;
     text-align: center;
     background-size: 100% 100%;
-
-
-
-
-
-
-
-
-
-}
-
-
-a {
-    color: rgb(236, 228, 228);
-
-}
-
-a:hover {
-    color: orange;
-}
-
-iframe {
-    margin: 50px;
 }
 
 .awards {
@@ -146,9 +127,8 @@ iframe {
 
 
 }
-
 .award-header {
-    font-size: 50px;
+    font-size: 2.5rem;
     font-weight: bold;
     text-align: center;
     margin: 70px;
@@ -158,10 +138,15 @@ iframe {
 
 
 }
-
+.award-header p{
+    font-size: 4rem;
+}
+iframe {
+    margin: 50px;
+}
 .awards-content {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     margin: 70px;
 
@@ -171,12 +156,13 @@ iframe {
 .award-item {
 
 
-    font-size: 30px;
+    font-size: 2rem;
     color: rgb(236, 228, 228);
     text-align: center;
     line-height: 1.5;
     background: url(../img/bkg-content-black_209fe757.png) no-repeat;
     background-size: 100% 100%;
+    
 
 
 
@@ -201,11 +187,20 @@ iframe {
     justify-content: center;
     align-items: center;
 }
+.download-header {
+    background-image: url(../img/bkg-content-black_209fe757.png);
+    background-size: 100% 100%;
+    margin: 70px;
+
+}
+.download-header p {
+    font-size:6.25rem;
+}
 
 .download-content {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 
 
 }
@@ -232,16 +227,9 @@ iframe {
     filter: grayscale(0%);
 }
 
-.download-header {
-    background-image: url(../img/bkg-content-black_209fe757.png);
-    background-size: 100% 100%;
-    margin: 70px;
 
-}
 
-.download-header p {
-    font-size: 100px;
-}
+
 .CONTACT{
     margin: 70px;
     display: flex;
@@ -250,6 +238,11 @@ iframe {
     align-items: center;
     
 }
+.footer {
+    height: 8vh;
+
+}
+
 .footer-note{
    font-weight: bold;
    color: rgb(236, 228, 228);
@@ -257,3 +250,91 @@ iframe {
    margin: 30px;
 
 }
+
+/* checkbox and button not visible on big screen  */
+#checkbox{
+    display: none;
+}
+.check-btn{
+    display:none;
+}
+.check-btn img{
+    height: 5vh;
+    width: auto;
+}
+
+/* for tablet  */
+
+@media (max-width:955px){
+    
+    .nav-links li{
+        margin:2rem;
+    }
+    body{
+    background-position: 50%;
+    }
+    .download-header{
+        text-align: center;
+        
+    }
+    .awards-content{
+        flex-wrap: wrap;
+    }
+    .download-content{
+        flex-wrap: wrap;
+    }
+    .footer-img img{
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+
+/* for phone  */
+@media(max-width:840px){
+    
+    .check-btn{
+        display: block;
+        
+    }
+    .nav-links{
+        
+       
+        position:fixed;
+        right: -100%;
+       
+        top:15vh;
+        flex-direction:column;
+        width:50%;
+        height:80vh;
+        background-image: url(/img/bkg-content-black_209fe757.png);
+        background-size: 100% 100%;
+        text-align: center;
+        transition: all 0.5s;
+    }
+    #checkbox:checked ~ .nav-links{
+        right: 0;
+        
+        
+    }
+    .nav-links li{
+        margin:2rem;
+    }
+   
+    .news-content {
+        font-size: 1rem;
+    }
+    .award-header p {
+        font-size: 2rem;
+    }
+    .award-item p{
+        font-size: 1.5rem ;
+    }
+    .download-header p{
+        font-size: 3rem;
+    }
+    
+
+    
+}
+
