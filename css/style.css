@@ -25,6 +25,7 @@ body {
     background-size:cover;
     color: rgb(236, 228, 228);
     overflow-x: hidden;
+    width: 100vw;
 
 
 }
@@ -206,6 +207,7 @@ iframe {
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow-x: hidden;
 
 
 }
