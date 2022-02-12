@@ -22,7 +22,7 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size:100% 100%;
-    margin-top: 70px;
+   
     color: rgb(236, 228, 228);
     overflow-x: hidden;
 
@@ -264,35 +264,10 @@ iframe {
     width: auto;
 }
 
-/* for tablet  */
 
-@media screen and (max-width:955px){
-    
-    .nav-links li{
-        margin:2rem;
-    }
-    body{
-    background-position: 50%;
-    }
-    .download-header{
-        text-align: center;
-        
-    }
-    .awards-content{
-        flex-wrap: wrap;
-    }
-    .download-content{
-        flex-wrap: wrap;
-    }
-    .footer-img img{
-        max-width: 100%;
-        height: auto;
-    }
-}
+/* for phones  */
+@media screen and (max-width:900px){
 
-
-/* for phone  */
-@media screen and (max-width:840px){
     
     .check-btn{
         display: block;
@@ -328,11 +303,21 @@ iframe {
     .award-header p {
         font-size: 2rem;
     }
+    .awards-content{
+        flex-wrap: wrap;
+        
+    }
     .award-item p{
         font-size: 1.5rem ;
     }
     .download-header p{
         font-size: 3rem;
+    }
+    .download-content{
+        flex-wrap: wrap;
+    }
+    .footer-img img{
+        width:100%;
     }
     .footer-note p{
         font-size: 0.9rem;
@@ -341,4 +326,7 @@ iframe {
 
     
 }
+
+
+
 
