@@ -14,6 +14,7 @@
     list-style: none;
     font-family: 'poppins', sans-serif;
     scroll-behavior: smooth;
+   
 
 
 }
@@ -22,9 +23,9 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size:cover;
-   
     color: rgb(236, 228, 228);
     overflow-x: hidden;
+
 
 }
 
@@ -35,12 +36,12 @@ nav {
     align-items: center;
     min-height: 8vh;
     background-color: transparent;
-    overflow-x: hidden;
+
     position: fixed;
     /* Set the navbar to fixed position */
     top: 0;
     /* Position the navbar at the top of the page */
-    width: 100%;
+    width: 100vw;
     /* Full width */
     z-index: 100;
     /* nav bar appears on top of everything */
@@ -193,7 +194,7 @@ iframe {
     background-image: url(../img/bkg-content-black_209fe757.png);
     background-size: 100% 100%;
     margin: 70px;
-    margin-top: 0;
+    
 
 }
 .download-header p {
@@ -267,7 +268,7 @@ iframe {
     height: 5vh;
     width: auto;
     margin: 0;
-    padding: 0;
+    
 }
 
 
@@ -283,15 +284,14 @@ iframe {
         background-position:50%;
     }
     .check-btn{
-        display:inline;
+        display:block;
         
     }
     .nav-links{
         
        
         position:fixed;
-        right: -100%;
-       
+       right:-100vw;
         top:15vh;
         flex-direction:column;
         width:50%;
@@ -302,7 +302,7 @@ iframe {
         transition: all 0.5s;
     }
     #checkbox:checked ~ .nav-links{
-        right: 0;
+        right:0vw;
         
         
     }
@@ -334,6 +334,10 @@ iframe {
     }
     .footer-note p{
         font-size: 0.9rem;
+    }
+    iframe{
+        width: 390px;
+        height: 390px;
     }
     
 
