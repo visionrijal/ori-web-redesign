@@ -1,11 +1,12 @@
-
 /* adding custom font family  */
 @font-face {
     font-family: gore;
     src: url(../fonts/gore.woff);
-  }
+}
 
-  /* removing default css on all elements */
+
+
+/* removing default css on all elements */
 * {
     margin: 0;
     padding: 0;
@@ -14,17 +15,26 @@
     list-style: none;
     font-family: 'poppins', sans-serif;
     scroll-behavior: smooth;
-   
+
 
 
 }
+
 body {
+
+    /* background image  */
     background-image: url("../img/background.jpg");
+    /* disable repeating in case image is smaller than container  */
     background-repeat: no-repeat;
+    /* fixed wrt to viewport */
     background-attachment: fixed;
-    background-size:cover;
+    /* scales image to fit viewport  */
+    background-size: cover;
+    /* font color for all text  */
     color: rgb(236, 228, 228);
+    /* removes horizontal scrolling due to overflowing element */
     overflow-x: hidden;
+    /* optional doesnt do anything */
     width: 100vw;
 
 
@@ -74,7 +84,7 @@ nav {
 }
 
 .nav-links a:hover {
-    color: orange;  
+    color: orange;
 }
 
 a {
@@ -87,6 +97,7 @@ a:hover {
 }
 
 .news {
+
     padding: 100px;
     margin-top: 80vh;
     display: flex;
@@ -98,6 +109,7 @@ a:hover {
 
 
 }
+
 .news-content {
     display: flex;
     flex-direction: column;
@@ -105,14 +117,18 @@ a:hover {
     align-items: center;
     padding: 30px;
     color: rgb(236, 228, 228);
+
+    /* applying horizontal borders   */
     border: solid rgb(236, 228, 228);
     border-width: 5px 0;
+
     font-weight: bold;
     font-size: 2.5rem;
+    text-align: center;
+
     background-image: url("../img/bkg-content-black_209fe757.png");
     overflow: hidden;
     background-repeat: no-repeat;
-    text-align: center;
     background-size: 100% 100%;
 }
 
@@ -122,6 +138,7 @@ a:hover {
     height: 100%;
     width: 100%;
     overflow: hidden;
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -131,23 +148,28 @@ a:hover {
 
 
 }
+
 .award-header {
     font-size: 2.5rem;
     font-weight: bold;
     text-align: center;
     margin: 70px;
+
     background-image: url(../img/bkg-content-black_209fe757.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
 
 
 }
-.award-header p{
+
+.award-header p {
     font-size: 4rem;
 }
+
 iframe {
     margin: 50px 0;
 }
+
 .awards-content {
     display: flex;
     justify-content: space-around;
@@ -166,7 +188,7 @@ iframe {
     line-height: 1.5;
     background: url(../img/bkg-content-black_209fe757.png) no-repeat;
     background-size: 100% 100%;
-    
+
 
 
 
@@ -191,15 +213,17 @@ iframe {
     justify-content: center;
     align-items: center;
 }
+
 .download-header {
     background-image: url(../img/bkg-content-black_209fe757.png);
     background-size: 100% 100%;
     margin: 70px;
-    
+
 
 }
+
 .download-header p {
-    font-size:6.25rem;
+    font-size: 6.25rem;
     text-align: center;
 }
 
@@ -218,7 +242,8 @@ iframe {
     -webkit-transition: .3s ease-in-out;
     transition: .3s ease-in-out;
 }
-.download-img2{
+
+.download-img2 {
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
     -webkit-transition: .3s ease-in-out;
@@ -229,6 +254,7 @@ iframe {
     -webkit-filter: grayscale(0%);
     filter: grayscale(0%);
 }
+
 .download-img2:hover {
     -webkit-filter: grayscale(0%);
     filter: grayscale(0%);
@@ -237,124 +263,137 @@ iframe {
 
 
 
-.CONTACT{
+.CONTACT {
     margin: 70px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    
+
 }
+
 .footer {
     height: 8vh;
 
 }
 
-.footer-note{
-   font-weight: bold;
-   color: rgb(236, 228, 228);
-   padding: 30px;
-   margin: 30px;
+.footer-note {
+    font-weight: bold;
+    color: rgb(236, 228, 228);
+    padding: 30px;
+    margin: 30px;
 
 }
 
 /* checkbox and button not visible on big screen  */
-#checkbox{
+#checkbox {
     display: none;
 }
-.check-btn{
-    display:none;
-    
+
+.check-btn {
+    display: none;
+
 }
-.check-btn img{
+
+.check-btn img {
     height: 5vh;
     width: auto;
     margin: 0;
-    
+
 }
-.download-button{
+
+.download-button {
     height: 500px;
     width: auto;
 }
 
 
 /* for phones  */
-@media screen and (max-width:900px){
-    nav{
+@media screen and (max-width:900px) {
+    nav {
         flex-direction: row-reverse;
     }
 
-    
-    body{
+
+    body {
         overflow-x: hidden;
-        background-position:50%;
+        background-position: 50%;
     }
-    .check-btn{
-        display:block;
-        
+
+    .check-btn {
+        display: block;
+
     }
-    .nav-links{
-        
-       
-        position:fixed;
-       right:-100vw;
-        top:15vh;
-        flex-direction:column;
-        width:50%;
-        height:80vh;
+
+    .nav-links {
+
+
+        position: fixed;
+        right: -100vw;
+        top: 15vh;
+        flex-direction: column;
+        width: 50%;
+        height: 75vh;
         background-image: url(../img/bkg-content-black_209fe757.png);
         background-size: 100% 100%;
         text-align: center;
         transition: all 0.5s;
     }
-    #checkbox:checked ~ .nav-links{
-        right:0vw;
-        
-        
+
+    #checkbox:checked~.nav-links {
+        right: 0vw;
+
+
     }
-    .nav-links li{
-        margin:2rem;
+
+    .nav-links li {
+        margin: 2rem;
     }
-   
+
     .news-content {
-        font-size:60%;
+        font-size: 60%;
     }
+
     .award-header p {
         font-size: 60%;
     }
-    .awards-content{
+
+    .awards-content {
         flex-wrap: wrap;
-        
+
     }
-    .award-item p{
-        font-size: 60% ;
-    }
-    .download-header p{
-        font-size: 150%;
-    }
-    .download-content{
-        flex-wrap: wrap;
-    }
-    .footer-img img{
-        width:100%;
-    }
-    .footer-note p{
+
+    .award-item p {
         font-size: 60%;
     }
-    iframe{
+
+    .download-header p {
+        font-size: 150%;
+    }
+
+    .download-content {
+        flex-wrap: wrap;
+    }
+
+    .footer-img img {
+        width: 100%;
+    }
+
+    .footer-note p {
+        font-size: 60%;
+    }
+
+    iframe {
         width: 390px;
         height: 390px;
         margin: 0;
     }
-    .download-button{
+
+    .download-button {
         width: 100%;
         height: auto;
     }
-    
 
-    
+
+
 }
-
-
-
-
