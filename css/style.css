@@ -21,7 +21,7 @@ body {
     background-image: url("../img/background.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size:100% 100%;
+    background-size:cover;
    
     color: rgb(236, 228, 228);
     overflow-x: hidden;
@@ -29,8 +29,9 @@ body {
 }
 
 nav {
+    padding: 30px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     min-height: 8vh;
     background-color: transparent;
@@ -192,10 +193,12 @@ iframe {
     background-image: url(../img/bkg-content-black_209fe757.png);
     background-size: 100% 100%;
     margin: 70px;
+    margin-top: 0;
 
 }
 .download-header p {
     font-size:6.25rem;
+    text-align: center;
 }
 
 .download-content {
@@ -258,19 +261,29 @@ iframe {
 }
 .check-btn{
     display:none;
+    
 }
 .check-btn img{
     height: 5vh;
     width: auto;
+    margin: 0;
+    padding: 0;
 }
 
 
 /* for phones  */
 @media screen and (max-width:900px){
+    nav{
+        flex-direction: row-reverse;
+    }
 
     
+    body{
+        overflow-x: hidden;
+        background-position:50%;
+    }
     .check-btn{
-        display: block;
+        display:inline;
         
     }
     .nav-links{
