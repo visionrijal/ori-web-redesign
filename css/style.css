@@ -317,20 +317,20 @@ iframe {
     }
    
     .news-content {
-        font-size: 1rem;
+        font-size:60%;
     }
     .award-header p {
-        font-size: 2rem;
+        font-size: 60%;
     }
     .awards-content{
         flex-wrap: wrap;
         
     }
     .award-item p{
-        font-size: 1.5rem ;
+        font-size: 60% ;
     }
     .download-header p{
-        font-size: 3rem;
+        font-size: 150%;
     }
     .download-content{
         flex-wrap: wrap;
@@ -339,7 +339,7 @@ iframe {
         width:100%;
     }
     .footer-note p{
-        font-size: 0.9rem;
+        font-size: 60%;
     }
     iframe{
         width: 390px;
